@@ -40,10 +40,16 @@
     <Compile Include="app\migrations\__init__.py" />
     <Compile Include="blog\admin.py" />
     <Compile Include="blog\apps.py" />
+    <Compile Include="blog\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="blog\manage.py" />
     <Compile Include="blog\migrations\__init__.py" />
     <Compile Include="blog\models.py" />
     <Compile Include="blog\tests.py" />
+    <Compile Include="blog\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="blog\views.py" />
     <Compile Include="blog\__init__.py" />
     <Compile Include="hello_world\admin.py" />
@@ -103,7 +109,9 @@
     <Folder Include="projects\templates\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="blog\templates\blog\index.html" />
+    <Content Include="blog\templates\blog_category.html" />
+    <Content Include="blog\templates\blog_detail.html" />
+    <Content Include="blog\templates\blog_index.html" />
     <Content Include="hello_world\templates\hello_world.html" />
     <Content Include="projects\templates\base.html" />
     <Content Include="projects\templates\project_details.html" />
